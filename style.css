@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 0.9rem;
+    color: #bdbdbd;
+}
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.todo-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.todo-form button:hover {
+    background-color: #43a047;
+}
+
+.todo-list ul {
+    list-style: none;
+}
+
+.task-item:hover > .task-actions {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.task-item {
+    background-color: #2a2a2a;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-text {
+    font-size: 0.95rem;
+    word-break: break-all;
+}
+
+.task-text-done {
+    text-decoration: line-through;
+    color: #9e9e9e;
+    font-style: italic;
+}
+
+.task-actions {
+    opacity: 0;
+    display: flex;
+    gap: 8px;
+}
+
+.task-actions button {
+    border: none;
+    padding: 6px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.task-actions i {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.done-btn {
+    background-color: #2196f3;
+    transition: 0.2ms ease;
+}
+
+.done-btn:hover {
+    background-color: #1676ca;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    transition: 0.2ms ease;
+}
+
+.delete-btn:hover {
+    background-color: #cf2b28;
+}
+
+.edit-btn {
+    background-color: #7bff00;
+    transition: 0.2ms ease;
+}
+
+.edit-btn:hover {
+    background-color: #69d702;
+}

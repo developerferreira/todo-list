@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <main class="container">
+        <header class="header">
+            <h1>To-Do List</h1>
+            <p>Organize suas tarefas</p>
+        </header>
+
+        <section class="todo-form">
+            <input type="text" placeholder="Descreva sua tarefa" id="task-input">
+            <button id="add-task-btn" onclick="addTask()">Adicionar</button>
+        </section>
+
+        <section class="todo-list">
+            <ul id="task-list">
+                <!-- 
+                    Deixei o código abaixo apenas para me "localizar" quando fui criar o script.. Ignora ele :).
+                -->
+                
+                <!-- <li class="task-item">
+                    <span class="task-text"></span>
+                    <div class="task-actions">
+                        <button class="done-btn"></button>
+                        <button class="delete-btn"></button>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
